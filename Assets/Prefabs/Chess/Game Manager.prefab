@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1231665258902482}
+  m_IsPrefabParent: 1
+--- !u!1 &1231665258902482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4035953233440214}
+  - component: {fileID: 114490882003397128}
+  - component: {fileID: 114049019599365694}
+  - component: {fileID: 114915331648380334}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4035953233440214
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231665258902482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.080016, y: 4.1095443, z: -1.2887659}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114049019599365694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231665258902482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a3556a2c9972840ad63f637e75cfab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightPawn: {fileID: 1116518926725622, guid: c264fb577d09e494f8d2c91f8cc5e2dc, type: 2}
+  darkPawn: {fileID: 1632923526090264, guid: 21f905b3f2a431d41bea139408da7c36, type: 2}
+  lightKnight: {fileID: 1782173616879868, guid: d9af1a8c6e6ddfc4099611ab289d38ba,
+    type: 2}
+  darkKnight: {fileID: 1114337181468986, guid: 7b26103fd4c187248aaa1b968b867972, type: 2}
+  lightBishop: {fileID: 1781551454647162, guid: bf33771728351c744b3ce094609d1adb,
+    type: 2}
+  darkBishop: {fileID: 1123299203212214, guid: a529310d22a398d4991c15c4fda8479c, type: 2}
+  lightRook: {fileID: 1699857896981100, guid: d75d84b3ade34b24d964b91790918f28, type: 2}
+  darkRook: {fileID: 1699857896981100, guid: c3ab76d5df563ba4facacb4e331e7c28, type: 2}
+  lightQueen: {fileID: 1636707755374256, guid: 19f122b39144a3d49a85ac17f36e6e17, type: 2}
+  darkQueen: {fileID: 1426637918268578, guid: c30c67dac3e680b43af22071b0c1da25, type: 2}
+  lightKing: {fileID: 1006935172477102, guid: 5e61b9df484387140bda71a9f150c260, type: 2}
+  darkKing: {fileID: 1368514273862896, guid: 77f4e75f0c1dfe3488ee897214d8d8e8, type: 2}
+--- !u!114 &114490882003397128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231665258902482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304afacac7135244aa3389524dc788a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhiteTeam:
+    isInCheck: 0
+    teamName: White
+    king: {fileID: 0}
+    direction: 1
+    currentlyPlaying: 0
+    pieces: []
+    boardStateIdentifierPrefix: l
+  BlackTeam:
+    isInCheck: 0
+    teamName: Black
+    king: {fileID: 0}
+    direction: -1
+    currentlyPlaying: 0
+    pieces: []
+    boardStateIdentifierPrefix: d
+  currentPlayingTeam:
+    isInCheck: 0
+    teamName: 
+    king: {fileID: 0}
+    direction: 0
+    currentlyPlaying: 0
+    pieces: []
+    boardStateIdentifierPrefix: 
+--- !u!114 &114915331648380334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231665258902482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00deb8e3d738b614bb7e380effc8f576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPlayingTeam:
+    isInCheck: 0
+    teamName: 
+    king: {fileID: 0}
+    direction: 0
+    currentlyPlaying: 0
+    pieces: []
+    boardStateIdentifierPrefix: 
